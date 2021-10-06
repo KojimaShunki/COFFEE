@@ -14,6 +14,12 @@ img {
   max-width: 100%;
 }
 
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
 header nav {
   margin-top: 16px;
   margin-right: 40px;
@@ -36,5 +42,24 @@ header nav ul li a {
   font-size: 0.9rem;
   color: #fff;
   text-shadow: 1px 1px 2px #121212;
+}
+
+.mainvisual {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.mainvisual img {
+  height: 100vh;
+}
+
+.mainvisual h1 {
+  color: #fff;
+  font-size: 115px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 /*# sourceMappingURL=styles.css.map */
