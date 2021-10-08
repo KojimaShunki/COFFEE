@@ -71,8 +71,18 @@ header nav ul li a {
   position: relative;
   height: 300px;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: 100vw 100vh;
   background-position: center;
+}
+
+.bg-img .sec-title {
+  color: #fff;
+  font-size: 4.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .bg-img.menu {
@@ -85,16 +95,6 @@ header nav ul li a {
 
 .bg-img.location {
   background-image: url("../img/location.jpg");
-}
-
-.bg-img .sec-title {
-  color: #fff;
-  font-size: 4.5rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .wrapper {
@@ -165,6 +165,7 @@ header nav ul li a {
 
 #about ul li {
   width: 46%;
+  line-height: 1.8rem;
   text-align: left;
   margin-bottom: 40px;
 }
@@ -243,6 +244,7 @@ header nav ul li a {
 
 #location ul {
   text-align: left;
+  line-height: 1.5rem;
 }
 
 #location ul li:nth-of-type(even) {
@@ -253,5 +255,60 @@ footer {
   padding: 40px 0 10px;
   text-align: center;
   font-size: 0.625rem;
+}
+
+@media (max-width: 768px) {
+  header nav {
+    margin-top: 20px;
+  }
+  .mainvisual {
+    margin-bottom: 10px;
+  }
+  .mainvisual h1 {
+    font-size: 84.5px;
+  }
+  .bg-img {
+    height: 94px;
+    background-attachment: scroll;
+  }
+  .bg-img .sec-title {
+    font-size: 2rem;
+  }
+  .wrapper {
+    margin: 32px auto 80px;
+  }
+  .wrapper h3 {
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+  }
+  #menu .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #menu .wrapper .left-side {
+    width: 100%;
+    border-right: none;
+  }
+  #menu .wrapper .right-side {
+    width: 100%;
+  }
+  #menu .wrapper .right-side h3 {
+    margin-top: 32px;
+  }
+  #about ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about ul li {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  #about a {
+    margin-top: 24px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

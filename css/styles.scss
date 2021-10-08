@@ -70,8 +70,17 @@ header {
   position: relative;
   height: 300px;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: 100vw 100vh;
   background-position: center;
+
+  .sec-title {
+    color: #fff;
+    font-size: 4.5rem;
+    position: absolute;
+    top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
 
   &.menu {
     background-image: url("../img/menu.jpg");
@@ -84,15 +93,6 @@ header {
   &.location {
     background-image: url("../img/location.jpg");
   }
-}
-
-.bg-img .sec-title {
-  color: #fff;
-  font-size: 4.5rem;
-  position: absolute;
-  top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .wrapper {
@@ -110,11 +110,8 @@ header {
 }
 
 #menu {
-
   .wrapper {
     display: flex;
-
-    
 
     .left-side {
       width: 50%;
@@ -156,6 +153,7 @@ header {
 
     li {
       width: 46%;
+      line-height: 1.8rem;
       text-align: left;
       margin-bottom: 40px;
     }
@@ -240,6 +238,7 @@ header {
 
   ul {
     text-align: left;
+    line-height: 1.5rem;
 
     li:nth-of-type(even) {
       margin-bottom: 16px;
@@ -251,4 +250,72 @@ footer {
   padding: 40px 0 10px;
   text-align: center;
   font-size: 0.625rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    nav {
+      margin-top: 20px;
+    }
+  }
+
+  .mainvisual {
+    margin-bottom: 10px;
+
+    h1 {
+      font-size: 84.5px;
+    }
+  }
+
+  .bg-img {
+    height: 94px;
+    background-attachment: scroll;
+    .sec-title {
+      font-size: 2rem;
+    }
+  }
+
+  .wrapper {
+    margin: 32px auto 80px;
+
+    h3 {
+      font-size: 1.25rem;
+      margin-bottom: 24px;
+    }
+  }
+
+  #menu {
+    .wrapper {
+      flex-direction: column;
+
+      .left-side {
+        width: 100%;
+        border-right: none;
+      }
+
+      .right-side {
+        width: 100%;
+
+        h3 {
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+
+  #about {
+    ul {
+      flex-direction: column;
+      
+      li {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+    }
+
+    a {
+      margin-top: 24px;
+    }
+
+  }
 }
