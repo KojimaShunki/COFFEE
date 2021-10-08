@@ -80,6 +80,10 @@ header {
   &.about {
     background-image: url("../img/about.jpg");
   }
+
+  &.location {
+    background-image: url("../img/location.jpg");
+  }
 }
 
 .bg-img .sec-title {
@@ -223,6 +227,22 @@ header {
       &:hover::after {
         width: 100%;
       }
+    }
+  }
+}
+
+#location {
+  iframe {
+    width: 100%;
+    filter: grayscale(1);
+    margin-bottom: 24px;
+  }
+
+  ul {
+    text-align: left;
+
+    li:nth-of-type(even) {
+      margin-bottom: 16px;
     }
   }
 }

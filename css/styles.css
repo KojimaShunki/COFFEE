@@ -83,6 +83,10 @@ header nav ul li a {
   background-image: url("../img/about.jpg");
 }
 
+.bg-img.location {
+  background-image: url("../img/location.jpg");
+}
+
 .bg-img .sec-title {
   color: #fff;
   font-size: 4.5rem;
@@ -228,5 +232,20 @@ header nav ul li a {
 
 #about a span:hover::before, #about a span:hover::after {
   width: 100%;
+}
+
+#location iframe {
+  width: 100%;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  margin-bottom: 24px;
+}
+
+#location ul {
+  text-align: left;
+}
+
+#location ul li:nth-of-type(even) {
+  margin-bottom: 16px;
 }
 /*# sourceMappingURL=styles.css.map */
