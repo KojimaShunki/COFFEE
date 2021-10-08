@@ -248,4 +248,10 @@ header nav ul li a {
 #location ul li:nth-of-type(even) {
   margin-bottom: 16px;
 }
+
+footer {
+  padding: 40px 0 10px;
+  text-align: center;
+  font-size: 0.625rem;
+}
 /*# sourceMappingURL=styles.css.map */
